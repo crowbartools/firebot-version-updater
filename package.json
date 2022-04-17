@@ -1,7 +1,7 @@
 {
     "name": "firebot-nightly-version-updater",
     "description": "Updates the nightly build's version to include short sha",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "license": "GPL-v3.0",
     "repository": "https://github.com/crowbartools/firebot-version-updater.git",
     "dependencies": {}

@@ -1,9 +1,8 @@
 name: 'Update Firebot nightly version'
 description: 'updates the package.json version to the latest commit contained in the nightly build'
-inputs:
-  sha:
-    description: 'commit sha'
-    required: true
+outputs:
+  version:
+    description: 'The version of the nightly build'
 runs:
   using: 'node16'
   main: 'index.js'
