@@ -4,7 +4,7 @@ const { readFileSync, writeFileSync } = require('fs');
 const packagePath = path.resolve('./package.json');
 const package = JSON.parse(readFileSync(packagePath, 'utf-8'));
 
-package.version += `-nightly-${process.argv[2]}`;
+package.version += `-nightly-${process.env['INPUT_SHA']}`;
 
 writeFileSync(packagePath, JSON.stringify(package), 'utf-8');
 
